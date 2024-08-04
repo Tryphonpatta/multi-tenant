@@ -1,5 +1,6 @@
 model Course {
-    id String  @id @default(uuid())
-    name String
-    category String
+  id         String       @id @default(uuid())
+  name       String
+  category   String
+  courseUser courseUser[]
 }

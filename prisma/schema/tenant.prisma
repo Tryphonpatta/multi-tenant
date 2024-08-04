@@ -1,5 +1,5 @@
 model Tenant {
-    id String @id @default(uuid())
-    name String
-    schemaName String
+  id         String @id @default(uuid())
+  name       String
+  schemaName String
 }

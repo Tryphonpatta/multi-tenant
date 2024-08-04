@@ -1,0 +1,7 @@
+model courseUser {
+  id        String @id @default(uuid())
+  course_id String
+  user_id   Int
+  course    Course @relation(fields: [course_id], references: [id])
+  user      User   @relation(fields: [user_id], references: [id])
+}
